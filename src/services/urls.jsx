@@ -1,5 +1,6 @@
 //URL dominio
-export const Domain = "http://localhost:3000/api";
+
+export const Domain = import.meta.env.VITE_BACKEND = "" ?? "http://localhost:3000/api";
 
 //Ruta usuario
 export const users_URL = `${Domain}/users`;
